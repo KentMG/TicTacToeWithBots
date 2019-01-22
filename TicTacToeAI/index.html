@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		TicTacToe
+	</title>
+	<script type="text/javascript" src="index.js"></script>
+	<link href="./index.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div class="board">
+		<div class="staticDiv">
+			<h1>TIC-TAC-TOE</h1>
+			<h4 id="TurnIndicator" class="game">X's Turn</h4>
+		</div>
+		<div class="board game" id="gameBoard">
+			<div>
+				<input class="button game" type="button" value="" id="TopLeft" onclick="makeMove(this.id)"/>
+			</div>
+			<div>
+				<input class="button game" type="button" value="" id="TopMiddle" onclick="makeMove(this.id)"/>
+			</div>
+			<div>
+				<input class="button game" type="button" value="" id="TopRight" onclick="makeMove(this.id)"/>
+			</div>
+			<div>
+				<input class="button game" type="button" value="" id="MiddleLeft" onclick="makeMove(this.id)"/>
+			</div>
+			<div>
+				<input class="button game" type="button" value="" id="MiddleMiddle" onclick="makeMove(this.id)"/>
+			</div>
+			<div>
+				<input class="button game" type="button" value="" id="MiddleRight" onclick="makeMove(this.id)"/>
+			</div>
+			<div>
+				<input class="button game" type="button" value="" id="BottomLeft" onclick="makeMove(this.id)"/>
+			</div>
+			<div>
+				<input class="button game" type="button" value="" id="BottomMiddle" onclick="makeMove(this.id)"/>
+			</div>
+			<div>
+				<input class="button game" type="button" value="" id="BottomRight" onclick="makeMove(this.id)"/>
+			</div>
+		</div>
+		<br>
+		<div class="staticDiv">
+			<input type="button" value="Reset Game" id= "gameReset" onclick="resetGame()"/>
+		</div>
+		<div>
+			<!--	<input type="button" class="playerChoice" value="0 Player" id="0player" onclick="setPlayerCount(this.value)"/> -->
+			<input type="button" class="playerChoice" value="1 Player" id="1player" onclick="setPlayerCount(this.value)"/>
+			<input type="button" class="playerChoice" value="2 Player" id="2player" onclick="setPlayerCount(this.value)"/>
+			<p id="playerCount" class="game"></p>
+			<input class="game playerChoice" type="button" value="Play as X" id="playerX" onclick="setPlayerType(this.value)"/>
+			<input class="game playerChoice" type="button" value="Play as O" id="playerO" onclick="setPlayerType(this.value)"/>
+			<p id="playerType"class="game"></p>
+			<p id="TurnCount"class="game">0</p>
+		</div>
+	</div>
+</body>
+</html>

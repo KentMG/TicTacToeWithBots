@@ -1,0 +1,53 @@
+*{
+	background-color: #000000;
+	color: #FF0000;
+	text-align: center;
+}
+
+div>p{
+	background-color: #2A2A2A;
+	width:150px;
+	height:150px;
+}
+
+.board{
+	display: flex;
+	flex-Direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	min-height: 150px;
+	width: 525px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.game{
+	display: none;
+}
+
+.playerChoice{
+	font-size:30pt;
+	margin-left:20px;
+}
+
+.staticDiv{
+	width: 525px;
+}
+
+.button{
+	font-size: 90pt;
+	width: 150px;
+	height: 150px;
+	background-color: #2A2A2A;
+	border= 0px;
+}
+
+#gameBoard{
+	margin-top: 10px;
+}
+
+#gameReset{
+	margin-top: 10px;
+	font-size: 15pt;
+	visibility: hidden;
+}
