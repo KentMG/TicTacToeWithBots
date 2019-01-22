@@ -178,7 +178,6 @@ function setPlayerType(value) {
 		document.getElementById('TurnCount').innerHTML="1";
 		viewBoard();
 		document.getElementById('MiddleMiddle').value = "X";
-		changeTurn();
 	}
 
 
