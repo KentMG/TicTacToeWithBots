@@ -112,7 +112,7 @@ function changeTurn() {
 }
 
 function setPlayerCount(value){
-/*	if(value=="0 Player"){
+	if(value=="0 Player"){
 		viewBoard();
 		document.getElementById('0player').style.display='none';
 		document.getElementById('1player').style.display='none';
@@ -129,18 +129,18 @@ function setPlayerCount(value){
 		oAIMove();
 		xAIMove();
 		checkForWin();
-	}*/
+	}
 	if(value=="1 Player"){
 		document.getElementById('playerCount').innerHTML="1";
 		document.getElementById('playerX').style.display='inline';
 		document.getElementById('playerO').style.display='inline';
-		//document.getElementById('0player').style.display='none';
+		document.getElementById('0player').style.display='none';
 		document.getElementById('1player').style.display='none';
 		document.getElementById('2player').style.display='none';
 	}
 	if(value=="2 Player"){
 		document.getElementById('playerCount').innerHTML="2";
-		//document.getElementById('0player').style.display='none';
+		document.getElementById('0player').style.display='none';
 		document.getElementById('1player').style.display='none';
 		document.getElementById('2player').style.display='none';
 		viewBoard();
@@ -743,11 +743,7 @@ function resetGame(){
 	document.getElementById('BottomMiddle').value="";
 	document.getElementById('BottomRight').value="";
 	document.getElementById('gameReset').style.visibility='hidden';
-/*	if(value=="0 Player"){
-		viewBoard();
-		document.getElementById('0player').style.display='none';
-		document.getElementById('1player').style.display='none';
-		document.getElementById('2player').style.display='none';
+	if(value=="0 Player"){
 		document.getElementById('MiddleMiddle').value="X";
 		document.getElementById('TurnCount').innerHTML="1";
 		document.getElementById('TurnIndicator').innerHTML="O's Turn";
@@ -760,7 +756,7 @@ function resetGame(){
 		oAIMove();
 		xAIMove();
 		checkForWin();
-	}*/
+	}
 }
 
 
