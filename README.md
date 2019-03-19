@@ -1,6 +1,6 @@
 Tic-Tac-Toe with Bots
 
-This is a web served version of TicTacToe.  When opened it offers the choice of 1 or 2 players. If one player is chosen then the player is given the choice of playing as X or as O and the bot will play as the other one. Upon the end of the game the player will be given the choice of replaying the game with the same options
+This is a web served version of TicTacToe.  When opened it offers the choice of 0 to 2 players. If one player is chosen then the player is given the choice of playing as X or as O and the bot will play as the other one. Upon the end of the game the player will be given the choice of replaying the game with the same options
 
 Getting Started
  
@@ -13,10 +13,6 @@ Prerequisites
   For Deployment to server:
     Node and a few node modules
     Node Package Manager
-    
-    User:
-      Web browser of choice
-
 
 Installing
 
@@ -42,5 +38,6 @@ Built With
     HTML5
     Javascript
 Known Bugs
-  Restart button on 0 player will not reset the game but will put it in 2 player mode.
+    
+    Restart button on 0 player will not reset the game but will put it in 2 player mode.
   
